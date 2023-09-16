@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "nodecraft",
+	"version": "${version}",
+	"name": "NodeCraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Zuiron"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Zuiron/NodeCraft"
+	},
+	"license": "MIT",
+	"icon": "assets/nodecraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.zuiron.nodecraft.NodeCraft"
+		],
+		"fabric-datagen": [
+			"net.zuiron.nodecraft.NodeCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"nodecraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
