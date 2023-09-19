@@ -14,9 +14,11 @@ public class ModItemGroup {
     public static final ItemGroup NODECRAFT_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(NodeCraft.MOD_ID, "nodecraft_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.nodecraft_group"))
-                    .icon(() -> new ItemStack(ModItems.COPPER_COIN)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.GOLD_COIN)).entries((displayContext, entries) -> {
                         //items
                         entries.add(ModItems.COPPER_COIN);
+                        entries.add(ModItems.SILVER_COIN);
+                        entries.add(ModItems.GOLD_COIN);
 
                         //blocks
                         entries.add(ModBlocks.NODE_BLOCK);

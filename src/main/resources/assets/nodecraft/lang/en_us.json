@@ -1,5 +1,7 @@
 {
   "item.nodecraft.copper_coin": "Copper Coin",
+  "item.nodecraft.silver_coin": "Silver Coin",
+  "item.nodecraft.gold_coin": "Gold Coin",
 
   "block.nodecraft.node_block": "Node Block",
 
